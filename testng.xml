@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="Litener.TestListener" />
+    </listeners>
+    
+    <test name="Login and TDS Test">
+        <classes>
+            <class name="Test.LoginPageTest" />
+            <class name="Test.TDSMasterPageTest" />
+        </classes>
+    </test>
+</suite>
